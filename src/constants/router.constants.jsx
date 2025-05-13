@@ -26,6 +26,7 @@ import Parties from "../pages/Main/Parties/Subscription";
 import TransactionHome from "../pages/Main/Transaction/TransactionHome";
 import User from "../pages/Main/Shop/User";
 import Subscription from "../pages/Main/Parties/Subscription";
+import Notifications from "../pages/Main/Notifications/Notifications";
 
 export const dashboardItems = [
   {
@@ -34,7 +35,7 @@ export const dashboardItems = [
     icon: RiDashboardHorizontalFill,
     element: <DashboardHome />,
   },
-    {
+  {
     name: "Earnings",
     path: "transaction",
     icon: BadgePoundSterling,
@@ -57,7 +58,10 @@ export const dashboardItems = [
     icon: TbCash,
     element: <Subscription />,
   },
-
+  {
+    path: "notifications",
+    element: <Notifications />,
+  },
 
   {
     name: "Setting",
