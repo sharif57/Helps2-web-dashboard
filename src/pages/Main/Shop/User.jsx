@@ -76,7 +76,14 @@ const User = () => {
     <div>
       <div className="rounded-lg border py-4   mt-8 recent-users-table text-white bg-white">
         {/* Ant Design Table */}
-        <h1 className="text-2xl font-semibold mb-4 text-black pl-4">User List</h1>
+        <div className="flex justify-between items-center mb-4 px-5   ">
+          <h1 className="text-2xl font-semibold mb-4 text-black pl-4">
+            User List
+          </h1>
+          <button className="bg-[#DD7109] text-white rounded-2xl py-2 px-4">
+            All User Download
+          </button>
+        </div>
         <Table
           columns={columns}
           dataSource={data}

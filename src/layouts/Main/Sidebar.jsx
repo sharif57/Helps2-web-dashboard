@@ -1,10 +1,11 @@
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import logo from "/logo.png";
+import logo from "/logo.svg";
 import logout from "../../assets/images/logout.png";
 import { createElement, useEffect, useState } from "react";
 import { routeLinkGenerators } from "../../utils/routeLinkGenerators";
 import { dashboardItems } from "../../constants/router.constants";
 import Swal from "sweetalert2";
+import { LogOut } from "lucide-react";
 
 
 const Sidebar = () => {
@@ -75,10 +76,11 @@ const Sidebar = () => {
         <div className="p-4 mt-auto  text-center">
           <button
             onClick={handleLogOut}
-            className=" w-full bg-red text-black  font-semibold px-12 py-3 flex items-center justify-center gap-3 text-md outline-none rounded-full"
+            className=" w-full  text-red  font-semibold px-12 py-3 flex items-center justify-center gap-3 text-md outline-none rounded-full"
           >
-            <img className="" src={logout} alt="" />
-            <span className="text-white font-light">Logout</span>
+            {/* <img className="" src={logout} alt="" /> */}
+            <LogOut></LogOut>
+            <span className="text-red font-red">Logout</span>
           </button>
         </div>
       </div>
